@@ -14,7 +14,7 @@ build:
   number: 2
   skip: true  # [win]
   run_exports:
-    - {{ pin_subpackage("rhash", upper_bound=version) }}
+    - {{ pin_subpackage("rhash", max_pin="x.x.x") }}
 
 requirements:
   build:
