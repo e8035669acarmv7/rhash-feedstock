@@ -23,8 +23,8 @@ test:
   commands:
     - test -f "$PREFIX/include/rhash.h"
     - test -f "$PREFIX/lib/librhash${SHLIB_EXT}"  # [unix]
-    - test -f "$PREFIX/lib/librhash.so.0"  # [linux]
-    - test -f "$PREFIX/lib/librhash.0.dylib"  # [osx]
+    - test -f "$PREFIX/lib/librhash.so.1"  # [linux]
+    - test -f "$PREFIX/lib/librhash.1.dylib"  # [osx]
     - rhash --version
 
 about:
