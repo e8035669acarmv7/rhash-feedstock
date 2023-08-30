@@ -11,10 +11,10 @@ source:
   sha256: 1e40fa66966306920f043866cbe8612f4b939b033ba5e2708c3f41be257c8a3e
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   run_exports:
-    - {{ pin_subpackage("rhash") }}
+    - {{ pin_subpackage("rhash", upper_bound=version) }}
 
 requirements:
   build:
